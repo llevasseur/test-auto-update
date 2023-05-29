@@ -16,10 +16,16 @@
     "name": "Leevon Levasseur",
     "email": "leevonlevasseur@gmail.com"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/llevasseur/test-auto-update.git"
+  },
   "license": "MIT",
   "dependencies": {
     "dotenv": "^16.0.3",
-    "electron-squirrel-startup": "^1.0.0"
+    "electron-log": "^4.4.8",
+    "electron-squirrel-startup": "^1.0.0",
+    "update-electron-app": "^2.0.1"
   },
   "devDependencies": {
     "@electron-forge/cli": "^6.1.1",

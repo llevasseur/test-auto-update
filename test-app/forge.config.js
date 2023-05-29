@@ -19,17 +19,15 @@ module.exports = {
   rebuildConfig: {},
   makers: [
     {
+      name: '@electron-forge/maker-zip'
+    },
+    {
       name: '@electron-forge/maker-squirrel',
       config: {
         certificateFile: 'build/windowsCert_SW.pfx',
         certificatePassword: process.env.CERTIFICATEPASS,
         setupIcon: 'build/icons/dogicon.ico' 
       },
-    },
-    {
-      name: '@electron-forge/maker-dmg',
-      config: {
-      }
     }
   ],
 };

@@ -973,6 +973,16 @@ electron-installer-redhat@^3.2.0:
     word-wrap "^1.2.3"
     yargs "^16.0.2"
 
+electron-is-dev@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.npmjs.org/electron-is-dev/-/electron-is-dev-0.3.0.tgz"
+  integrity sha512-jLttuuq8QK67n3mXmIe9pkrO7IH3LGIk12xJkhTmc852U2sCJaRAOpRGPSh+1Xnzck5v9escd9YXzuze9nGejg==
+
+electron-log@^4.4.8:
+  version "4.4.8"
+  resolved "https://registry.npmjs.org/electron-log/-/electron-log-4.4.8.tgz"
+  integrity sha512-QQ4GvrXO+HkgqqEOYbi+DHL7hj5JM+nHi/j+qrN9zeeXVKy8ZABgbu4CnG+BBqDZ2+tbeq9tUC4DZfIWFU5AZA==
+
 electron-packager@^17.1.1:
   version "17.1.1"
   resolved "https://registry.npmjs.org/electron-packager/-/electron-packager-17.1.1.tgz"
@@ -1016,7 +1026,7 @@ electron-winstaller@^5.0.0:
     lodash.template "^4.2.2"
     temp "^0.9.0"
 
-electron@24.4.0:
+"electron@>= 6.0.0", electron@24.4.0:
   version "24.4.0"
   resolved "https://registry.npmjs.org/electron/-/electron-24.4.0.tgz"
   integrity sha512-A9YzLHRUA+HfYVf2daNv0jPXNCWShgcgcTaGntrZRGynQLEhDTbti9Lfmq2tjRKoEgXZ7qj+aJFw+tJZsT/Cfw==
@@ -1391,6 +1401,13 @@ get-stream@^5.1.0:
   dependencies:
     pump "^3.0.0"
 
+github-url-to-object@^4.0.4:
+  version "4.0.6"
+  resolved "https://registry.npmjs.org/github-url-to-object/-/github-url-to-object-4.0.6.tgz"
+  integrity sha512-NaqbYHMUAlPcmWFdrAB7bcxrNIiiJWJe8s/2+iOc9vlcHlwHqSGrPk+Yi3nu6ebTwgsZEa7igz+NH2vEq3gYwQ==
+  dependencies:
+    is-url "^1.1.0"
+
 glob-parent@^5.1.2:
   version "5.1.2"
   resolved "https://registry.npmjs.org/glob-parent/-/glob-parent-5.1.2.tgz"
@@ -1709,6 +1726,11 @@ is-unicode-supported@^0.1.0:
   version "0.1.0"
   resolved "https://registry.npmjs.org/is-unicode-supported/-/is-unicode-supported-0.1.0.tgz"
   integrity sha512-knxG2q4UC3u8stRGyAVJCOdxFmv5DZiRcdlIaAQXAbSfJya+OhopNotLQrstBhququ4ZpuKbDc/8S6mgXgPFPw==
+
+is-url@^1.1.0, is-url@^1.2.4:
+  version "1.2.4"
+  resolved "https://registry.npmjs.org/is-url/-/is-url-1.2.4.tgz"
+  integrity sha512-ITvGim8FhRiYe4IQ5uHSkj7pVaPDrCTkNd3yq3cV7iZAcJdHTUMPMEHcqSOy9xZ9qFenQCvi+2wjH9a1nXqHww==
 
 is-windows@^1.0.1:
   version "1.0.2"
@@ -2931,6 +2953,16 @@ unorm@^1.4.1:
   version "1.6.0"
   resolved "https://registry.npmjs.org/unorm/-/unorm-1.6.0.tgz"
   integrity sha512-b2/KCUlYZUeA7JFUuRJZPUtr4gZvBh7tavtv4fvk4+KV9pfGiR6CQAQAWl49ZpR3ts2dk4FYkP7EIgDJoiOLDA==
+
+update-electron-app@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.npmjs.org/update-electron-app/-/update-electron-app-2.0.1.tgz"
+  integrity sha512-e4xEner89UZZaBGYJbYlMdL1uUrC0VjOsTAL2N4opPjzFtn+j7mdsJJsnyXZzUVeLY+8tuCX4XEsUM98oBHmZg==
+  dependencies:
+    electron-is-dev "^0.3.0"
+    github-url-to-object "^4.0.4"
+    is-url "^1.2.4"
+    ms "^2.1.1"
 
 username@^5.1.0:
   version "5.1.0"
